@@ -26,3 +26,4 @@ def test_webhook():
     assert 'status' in response_json
     assert response_json['status'] == 'processing'
     assert 'task_id' in response_json
+    

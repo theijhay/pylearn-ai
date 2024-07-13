@@ -52,7 +52,7 @@ function show_view(view_selector) {
 
     document.querySelector(view_selector).style.display = "flex";
 }
-
+//
 new_chat_button.addEventListener("click", function() {
     show_view(".new-chat-view");
 });

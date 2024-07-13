@@ -1,0 +1,152 @@
+version: "3.1"
+
+stories:
+- story: greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Ask Python basics
+  steps:
+  - intent: ask_python_basics
+  - action: utter_ask_python_basics
+
+- story: Explain Python basics
+  steps:
+  - intent: explain_python_basics
+  - action: utter_explain_python_basics
+
+- story: Explain Python basics
+  steps:
+  - intent: explain_python_basics
+  - action: utter_explain_python_basics
+
+- story: Inquire Python Basics
+  steps:
+  - intent: inquire_python_basics
+  - action: utter_inquire_python_basics
+
+- story: Default response
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+
+- story: Explain functions
+  steps:
+  - intent: explain_functions
+  - action: utter_explain_functions
+
+- story: Ask functions
+  steps:
+  - intent: ask_functions
+  - action: utter_ask_functions
+
+- story: Provide installation help
+  steps:
+  - intent: ask_installation
+  - action: utter_ask_installation
+
+- story: Provide package info
+  steps:
+  - intent: ask_packages
+  - action: utter_ask_packages
+
+- story: Provide module info
+  steps:
+  - intent: ask_modules
+  - action: utter_ask_modules
+
+- story: Provide variables info
+  steps:
+  - intent: ask_variables
+  - action: utter_ask_variables
+
+- story: Provide exceptions info
+  steps:
+  - intent: ask_exceptions
+  - action: utter_ask_exceptions
+
+- story: Provide classes info
+  steps:
+  - intent: ask_classes
+  - action: utter_ask_classes
+
+- story: Provide decorators info
+  steps:
+  - intent: ask_decorators
+  - action: utter_ask_decorators
+
+- story: Provide comprehensions info
+  steps:
+  - intent: ask_comprehensions
+  - action: utter_ask_comprehensions
+
+- story: Provide hello world info
+  steps:
+  - intent: ask_hello_world
+  - action: utter_ask_hello_world
+
+- story: Provide control structures info
+  steps:
+  - intent: ask_control_structures
+  - action: utter_ask_control_structures
+
+- story: Provide generators info
+  steps:
+  - intent: ask_generators
+  - action: utter_ask_generators
+
+- story: Provide libraries info
+  steps:
+  - intent: ask_libraries
+  - action: utter_ask_libraries
+
+- story: Provide data types info
+  steps:
+  - intent: ask_data_types
+  - action: utter_ask_data_types
+
+- story: Provide lambda info
+  steps:
+  - intent: ask_lambda
+  - action: utter_ask_lambda
+
+- story: Provide file IO info
+  steps:
+  - intent: ask_file_io
+  - action: utter_ask_file_io
+
+- story: Provide operators info
+  steps:
+  - intent: ask_operators
+  - action: utter_ask_operators
+
+- story: Provide advanced topics info
+  steps:
+  - intent: ask_advanced_topics
+  - action: utter_ask_advanced_topics
+
+- story: Provide Python info
+  steps:
+  - intent: ask_python
+  - action: utter_ask_python
+
+- story: Provide control flow info
+  steps:
+  - intent: ask_control_flow
+  - action: utter_ask_control_flow
+
+- story: Provide inheritance info
+  steps:
+  - intent: ask_inheritance
+  - action: utter_ask_inheritance
+
+- story: Provide OOP concepts info
+  steps:
+  - intent: ask_oop_concepts
+  - action: utter_ask_oop_concepts
+
+- story: goodbye user
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

@@ -1,0 +1,137 @@
+version: "3.1"
+
+rules:
+- rule: Explain Python basics
+  steps:
+  - intent: explain_python_basics
+  - action: utter_explain_python_basics
+
+- rule: Inquire Python Basics
+  steps:
+  - intent: inquire_python_basics
+  - action: utter_inquire_python_basics
+
+- rule: Default response
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+
+- rule: Explain functions
+  steps:
+  - intent: explain_functions
+  - action: utter_explain_functions
+
+- rule: Ask functions
+  steps:
+  - intent: ask_functions
+  - action: utter_ask_functions
+
+- rule: Provide installation help
+  steps:
+  - intent: ask_installation
+  - action: utter_ask_installation
+
+- rule: Provide package info
+  steps:
+  - intent: ask_packages
+  - action: utter_ask_packages
+
+- rule: Provide module info
+  steps:
+  - intent: ask_modules
+  - action: utter_ask_modules
+
+- rule: Provide variables info
+  steps:
+  - intent: ask_variables
+  - action: utter_ask_variables
+
+- rule: Provide exceptions info
+  steps:
+  - intent: ask_exceptions
+  - action: utter_ask_exceptions
+
+- rule: Provide classes info
+  steps:
+  - intent: ask_classes
+  - action: utter_ask_classes
+
+- rule: Provide decorators info
+  steps:
+  - intent: ask_decorators
+  - action: utter_ask_decorators
+
+- rule: Provide comprehensions info
+  steps:
+  - intent: ask_comprehensions
+  - action: utter_ask_comprehensions
+
+- rule: Provide hello world info
+  steps:
+  - intent: ask_hello_world
+  - action: utter_ask_hello_world
+
+- rule: Provide control structures info
+  steps:
+  - intent: ask_control_structures
+  - action: utter_ask_control_structures
+
+- rule: Provide generators info
+  steps:
+  - intent: ask_generators
+  - action: utter_ask_generators
+
+- rule: Provide libraries info
+  steps:
+  - intent: ask_libraries
+  - action: utter_ask_libraries
+
+- rule: Provide data types info
+  steps:
+  - intent: ask_data_types
+  - action: utter_ask_data_types
+
+- rule: Provide lambda info
+  steps:
+  - intent: ask_lambda
+  - action: utter_ask_lambda
+
+- rule: Provide file IO info
+  steps:
+  - intent: ask_file_io
+  - action: utter_ask_file_io
+
+- rule: Provide operators info
+  steps:
+  - intent: ask_operators
+  - action: utter_ask_operators
+
+- rule: Provide advanced topics info
+  steps:
+  - intent: ask_advanced_topics
+  - action: utter_ask_advanced_topics
+
+- rule: Provide Python info
+  steps:
+  - intent: ask_python
+  - action: utter_ask_python
+
+- rule: Provide control flow info
+  steps:
+  - intent: ask_control_flow
+  - action: utter_ask_control_flow
+
+- rule: Provide inheritance info
+  steps:
+  - intent: ask_inheritance
+  - action: utter_ask_inheritance
+
+- rule: Provide OOP concepts info
+  steps:
+  - intent: ask_oop_concepts
+  - action: utter_ask_oop_concepts
+
+- rule: goodbye user
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

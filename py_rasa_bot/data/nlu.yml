@@ -1,0 +1,208 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hello
+    - Hi
+    - Hey
+    - Good morning
+    - Good afternoon
+    - Hi there
+
+- intent: ask_python_basics
+  examples: |
+    - What are the basics of Python?
+    - Can you teach me Python basics?
+    - Explain the fundamentals of Python.
+    - I want to learn Python basics.
+
+- intent: explain_python_basics
+  examples: |
+    - What is Python?
+    - Can you explain the basics of Python?
+    - Tell me about Python basics.
+    - I want to learn Python.
+    - How do I start with Python?
+
+- intent: inquire_python_basics
+  examples: |
+      - Can you tell me the basics of Python?
+      - I need to know about Python basics.
+      - Explain the basics of Python to me.
+      - Please give me a rundown of Python basics.
+      - I want to learn python
+      - Tell me more about Python basics
+      - Explain Python basics
+      - How do I start learning Python?
+
+- intent: ask_installation
+  examples: |
+    - How do I install Python?
+    - Can you guide me through the Python installation?
+    - How to install Python on my computer?
+    - Help me with Python installation.
+
+- intent: ask_packages
+  examples: |
+    - What are Python packages?
+    - Can you explain Python packages?
+    - How do I use packages in Python?
+    - Tell me about Python packages.
+
+- intent: ask_modules
+  examples: |
+    - What are Python modules?
+    - Explain Python modules to me.
+    - How do I import modules in Python?
+    - Tell me about Python modules.
+
+- intent: ask_variables
+  examples: |
+    - What are variables in Python?
+    - How do I declare variables in Python?
+    - Can you explain variables in Python?
+    - Tell me about variables in Python.
+
+- intent: ask_exceptions
+  examples: |
+    - What are exceptions in Python?
+    - How do I handle exceptions in Python?
+    - Explain exceptions in Python.
+    - Tell me about Python exceptions.
+
+- intent: ask_classes
+  examples: |
+    - What are classes in Python?
+    - How do I create classes in Python?
+    - Can you explain Python classes?
+    - Tell me about classes in Python.
+
+- intent: ask_oop_concepts
+  examples: |
+    - What are OOP concepts in Python?
+    - Explain object-oriented programming.
+    - Tell me about classes and objects.
+    - Can you explain inheritance and polymorphism?
+
+
+- intent: explain_functions
+  examples: |
+    - Can you explain functions in Python?
+    - Tell me about functions in Python.
+    - How do functions work in Python?
+    - I need an explanation of Python functions.
+
+
+- intent: ask_functions
+  examples: |
+    - What are functions in Python?
+    - Explain Python functions.
+    - Can you teach me about functions?
+    - Tell me how functions work in Python.
+
+
+
+- intent: ask_decorators
+  examples: |
+    - What are decorators in Python?
+    - How do I use decorators in Python?
+    - Explain decorators in Python.
+    - Tell me about Python decorators.
+
+- intent: ask_comprehensions
+  examples: |
+    - What are comprehensions in Python?
+    - Explain list comprehensions.
+    - How do I use comprehensions in Python?
+    - Tell me about Python comprehensions.
+
+- intent: ask_hello_world
+  examples: |
+    - How do I write a hello world program in Python?
+    - Can you show me a hello world example?
+    - What is a hello world program in Python?
+    - Teach me to write hello world in Python.
+
+- intent: ask_control_structures
+  examples: |
+    - What are control structures in Python?
+    - Can you explain control structures?
+    - Tell me about loops and conditionals.
+    - What types of control structures are there?
+
+- intent: ask_generators
+  examples: |
+    - What are generators in Python?
+    - How do I create generators in Python?
+    - Explain Python generators.
+    - Tell me about generators in Python.
+
+- intent: ask_libraries
+  examples: |
+    - What are some useful libraries in Python?
+    - Can you recommend Python libraries?
+    - Tell me about popular Python libraries.
+    - What libraries should I use for data science?
+
+- intent: ask_data_types
+  examples: |
+    - What are data types in Python?
+    - Explain different data types in Python.
+    - How do I use data types in Python?
+    - Tell me about Python data types.
+
+- intent: ask_lambda
+  examples: |
+    - What are lambda functions in Python?
+    - How do I use lambda functions?
+    - Explain lambda functions in Python.
+    - Tell me about Python lambda functions.
+
+- intent: ask_file_io
+  examples: |
+    - How do I handle file input/output in Python?
+    - Explain file I/O in Python.
+    - How do I read and write files in Python?
+    - Tell me about file operations in Python.
+
+- intent: ask_operators
+  examples: |
+    - What are operators in Python?
+    - How do I use operators in Python?
+    - Explain operators in Python.
+    - Tell me about Python operators.
+
+- intent: ask_advanced_topics
+  examples: |
+    - What are some advanced topics in Python?
+    - Can you teach me advanced Python?
+    - Explain advanced Python concepts.
+    - Tell me about advanced Python topics.
+
+- intent: ask_python
+  examples: |
+    - Can you tell me about Python?
+    - Explain Python to me.
+    - I want to learn about Python.
+
+- intent: ask_control_flow
+  examples: |
+    - What is control flow in Python?
+    - How do I manage control flow in Python?
+    - Explain control flow statements.
+    - Tell me about Python control flow.
+
+- intent: ask_inheritance
+  examples: |
+    - What is inheritance in Python?
+    - How do I use inheritance in Python?
+    - Explain inheritance in Python.
+    - Tell me about Python inheritance.
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - See you later
+    - Bye
+    - Talk to you later

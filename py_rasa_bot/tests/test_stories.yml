@@ -1,0 +1,112 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: Test greet and provide Python info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: provide_python_info
+  - action: action_provide_python_info
+
+- story: Test provide installation steps
+  steps:
+  - intent: provide_installation_steps
+  - action: action_provide_installation_steps
+
+- story: Test provide hello world example
+  steps:
+  - intent: provide_hello_world_example
+  - action: action_provide_hello_world_example
+
+- story: Test provide data types
+  steps:
+  - intent: provide_data_types
+  - action: action_provide_data_types
+
+- story: Test provide variables
+  steps:
+  - intent: provide_variables
+  - action: action_provide_variables
+
+- story: Test provide operators
+  steps:
+  - intent: provide_operators
+  - action: action_provide_operators
+
+- story: Test provide control flow
+  steps:
+  - intent: provide_control_flow
+  - action: action_provide_control_flow
+
+- story: Test provide functions
+  steps:
+  - intent: provide_functions
+  - action: action_provide_functions
+
+- story: Test provide modules
+  steps:
+  - intent: provide_modules
+  - action: action_provide_modules
+
+- story: Test provide exceptions
+  steps:
+  - intent: provide_exceptions
+  - action: action_provide_exceptions
+
+- story: Test provide file IO
+  steps:
+  - intent: provide_file_io
+  - action: action_provide_file_io
+
+- story: Test provide classes
+  steps:
+  - intent: provide_classes
+  - action: action_provide_classes
+
+- story: Test provide inheritance
+  steps:
+  - intent: provide_inheritance
+  - action: action_provide_inheritance
+
+- story: Test provide libraries
+  steps:
+  - intent: provide_libraries
+  - action: action_provide_libraries
+
+- story: Test provide packages
+  steps:
+  - intent: provide_packages
+  - action: action_provide_packages
+
+- story: Test provide decorators
+  steps:
+  - intent: provide_decorators
+  - action: action_provide_decorators
+
+- story: Test provide generators
+  steps:
+  - intent: provide_generators
+  - action: action_provide_generators
+
+- story: Test provide lambda
+  steps:
+  - intent: provide_lambda
+  - action: action_provide_lambda
+
+- story: Test provide comprehensions
+  steps:
+  - intent: provide_comprehensions
+  - action: action_provide_comprehensions
+
+- story: Test provide advanced topics
+  steps:
+  - intent: provide_advanced_topics
+  - action: action_provide_advanced_topics
+
+- story: Test greet and say goodbye
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye

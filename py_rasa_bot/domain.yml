@@ -1,0 +1,295 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_python_basics
+  - explain_python_basics
+  - inquire_python_basics
+  - ask_installation
+  - ask_packages
+  - ask_modules
+  - ask_variables
+  - ask_exceptions
+  - ask_classes
+  - ask_oop_concepts
+  - explain_functions
+  - ask_functions
+  - ask_decorators
+  - ask_comprehensions
+  - ask_hello_world
+  - ask_control_structures
+  - ask_generators
+  - ask_libraries
+  - ask_data_types
+  - ask_lambda
+  - ask_file_io
+  - ask_operators
+  - ask_advanced_topics
+  - ask_python
+  - ask_control_flow
+  - ask_inheritance
+  - goodbye
+  - nlu_fallback
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you with Python today?"
+
+  utter_ask_python_basics:
+    - text: |
+        Python basics include:
+        - **Syntax**: Readable and straightforward
+        - **Variables**: Used to store data
+        - **Data Types**: Numbers, strings, lists, dictionaries, etc.
+        - **Control Structures**: Conditionals and loops
+        - **Functions**: Reusable blocks of code
+        - **Modules and Packages**: Code organization
+        - **Exceptions**: Handling errors
+        - **Classes and Objects**: Object-oriented programming
+
+  utter_explain_python_basics:
+    - text: |
+        Python is a high-level, interpreted programming language. Its basics include:
+        - **Syntax**: Simple and easy to learn
+        - **Variables**: Dynamic typing
+        - **Data Types**: int, float, str, list, tuple, dict, set
+        - **Control Flow**: if, for, while loops
+        - **Functions**: Defined using `def` keyword
+        - **Modules**: Reusable code in separate files
+        - **OOP**: Object-oriented programming with classes and objects
+
+  utter_inquire_python_basics:
+    - text: |
+        Python basics cover:
+        - **Syntax**: Clear and readable
+        - **Variables**: Used to store information
+        - **Data Types**: Such as int, str, list, dict
+        - **Control Flow**: if-else statements and loops
+        - **Functions**: Using `def` to create functions
+        - **Modules**: Importing and using modules
+        - **Exceptions**: Error handling
+        - **OOP**: Object-oriented programming concepts
+
+  utter_ask_installation:
+    - text: |
+        To install Python:
+        - Download from [python.org](https://python.org)
+        - Run the installer and follow the instructions
+        - Verify installation via terminal: `python --version`
+
+  utter_ask_packages:
+    - text: |
+        Python packages are collections of modules. Popular packages:
+        - **NumPy**: Numerical computing
+        - **Pandas**: Data manipulation
+        - **Requests**: HTTP requests
+        - **Matplotlib**: Plotting and visualization
+
+  utter_ask_modules:
+    - text: |
+        Modules in Python are files containing Python code. Use `import` to include them:
+        ```python
+        import module_name
+        ```
+
+  utter_ask_variables:
+    - text: |
+        Variables in Python store data:
+        ```python
+        x = 10
+        name = "Alice"
+        ```
+
+  utter_ask_exceptions:
+    - text: |
+        Exceptions handle errors in Python:
+        ```python
+        try:
+            # code
+        except Exception as e:
+            # handle error
+        ```
+
+  utter_ask_classes:
+    - text: |
+        Classes define objects in Python:
+        ```python
+        class MyClass:
+            def __init__(self, value):
+                self.value = value
+        ```
+
+  utter_ask_oop_concepts:
+    - text: |
+        OOP concepts in Python include:
+        - **Classes and Objects**
+        - **Inheritance**
+        - **Polymorphism**
+        - **Encapsulation**
+
+  utter_explain_functions:
+    - text: |
+        Functions in Python:
+        ```python
+        def my_function():
+            print("Hello, World!")
+        ```
+
+  utter_ask_functions:
+    - text: |
+        Functions are reusable code blocks:
+        ```python
+        def add(a, b):
+            return a + b
+        ```
+
+  utter_ask_decorators:
+    - text: |
+        Decorators modify functions:
+        ```python
+        def my_decorator(func):
+            def wrapper():
+                print("Something is happening before the function is called.")
+                func()
+                print("Something is happening after the function is called.")
+            return wrapper
+        ```
+
+  utter_ask_comprehensions:
+    - text: |
+        Comprehensions create lists, dicts, sets concisely:
+        ```python
+        [x**2 for x in range(10) if x % 2 == 0]
+        ```
+
+  utter_ask_hello_world:
+    - text: |
+        Hello World program in Python:
+        ```python
+        print("Hello, World!")
+        ```
+
+  utter_ask_control_structures:
+    - text: |
+        Control structures in Python include:
+        - **if** statements
+        - **for** and **while** loops
+
+  utter_ask_generators:
+    - text: |
+        Generators yield values one at a time:
+        ```python
+        def my_generator():
+            yield 1
+            yield 2
+        ```
+
+  utter_ask_libraries:
+    - text: |
+        Popular Python libraries:
+        - **NumPy**: Numerical operations
+        - **Pandas**: Data manipulation
+        - **Matplotlib**: Data visualization
+        - **Scikit-learn**: Machine learning
+
+  utter_ask_data_types:
+    - text: |
+        Python data types include:
+        - **int**: Integer
+        - **float**: Floating-point number
+        - **str**: String
+        - **list**: List
+        - **dict**: Dictionary
+
+  utter_ask_lambda:
+    - text: |
+        Lambda functions are anonymous functions:
+        ```python
+        add = lambda x, y: x + y
+        ```
+
+  utter_ask_file_io:
+    - text: |
+        File I/O in Python:
+        ```python
+        with open("file.txt", "r") as file:
+            content = file.read()
+        ```
+
+  utter_ask_operators:
+    - text: |
+        Python operators:
+        - **Arithmetic**: +, -, *, /
+        - **Comparison**: ==, !=, >, <
+        - **Logical**: and, or, not
+
+  utter_ask_advanced_topics:
+    - text: |
+        Advanced Python topics:
+        - **Decorators**
+        - **Generators**
+        - **Context Managers**
+        - **Metaclasses**
+
+  utter_ask_python:
+    - text: |
+        Python is a versatile programming language known for its simplicity and readability. It supports multiple programming paradigms and has a large standard library.
+
+  utter_ask_control_flow:
+    - text: |
+        Control flow in Python is managed with:
+        - **Conditional Statements**: `if`, `elif`, `else`
+        - **Loops**: `for`, `while`
+
+  utter_ask_inheritance:
+    - text: |
+        Inheritance in Python allows a class to inherit attributes and methods from another class. Example:
+        ```python
+        class Base:
+            pass
+
+        class Derived(Base):
+            pass
+        ```
+
+  utter_goodbye:
+    - text: "Goodbye! Feel free to ask me anytime you need help with Python."
+
+  utter_default:
+    - text: "I'm sorry, I didn't understand that. Could you please rephrase?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - action_handle_user_message
+  - utter_greet
+  - utter_ask_python_basics
+  - utter_explain_python_basics
+  - utter_inquire_python_basics
+  - utter_ask_installation
+  - utter_ask_packages
+  - utter_ask_modules
+  - utter_ask_variables
+  - utter_ask_exceptions
+  - utter_ask_classes
+  - utter_ask_oop_concepts
+  - utter_explain_functions
+  - utter_ask_functions
+  - utter_ask_decorators
+  - utter_ask_comprehensions
+  - utter_ask_hello_world
+  - utter_ask_control_structures
+  - utter_ask_generators
+  - utter_ask_libraries
+  - utter_ask_data_types
+  - utter_ask_lambda
+  - utter_ask_file_io
+  - utter_ask_operators
+  - utter_ask_advanced_topics
+  - utter_ask_python
+  - utter_ask_control_flow
+  - utter_ask_inheritance
+  - utter_goodbye
+  - utter_default

@@ -6,7 +6,6 @@ from quart_cors import cors
 from dotenv import load_dotenv
 import os
 import sys
-print("Python path:", sys.path)
 from models import Base, UserProgress, session
 from logging_config import setup_logging
 from rasa_utils import load_specific_model
@@ -15,12 +14,22 @@ import asyncio
 import subprocess
 import rasa
 
-print("Rasa path:", os.path.dirname(rasa.__file__))
+# Print Python path
+print("Python path:", sys.path)
+
+# Check installed packages
 installed_packages = subprocess.run(["pip", "freeze"], capture_output=True, text=True).stdout
 print("Installed packages:\n", installed_packages)
 
+# Reinstall Rasa
 subprocess.run(["pip", "install", "--force-reinstall", "rasa"])
-from rasa.core.agent import Agent
+
+# Verify Rasa installation
+try:
+    import rasa
+    print("Rasa path:", os.path.dirname(rasa.__file__))
+except ImportError:
+    print("Rasa is not installed.")
 
 # Initialize Quart app
 app = Quart(__name__)

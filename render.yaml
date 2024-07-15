@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: my-backend
+    env: python
+    buildCommand: "./render-build.sh"
+    startCommand: "gunicorn app:app --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql://botuser:jhaytech@localhost/bot_database

@@ -4,13 +4,10 @@ import logging
 from quart_cors import cors
 from dotenv import load_dotenv
 import os
-import sys
 from models import Base, UserProgress, session
 from logging_config import setup_logging
 from rasa_utils import load_specific_model
-sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 import asyncio
-import importlib.util
 
 # Initialize Quart app
 app = Quart(__name__)

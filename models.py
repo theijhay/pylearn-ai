@@ -8,8 +8,8 @@ import os
 load_dotenv()
 
 # SQLAlchemy database setup
-DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://botuser:jhaytech@localhost/bot_database')
-engine = create_engine(DATABASE_URL)
+POSTGRES_URL = os.getenv('POSTGRES_URL', 'postgresql://postgres.daojspoqqwlcrwlemrwo:WqfpPLAOWLyYBGtn@aws-0-us-east-1.pooler.supabase.com:6543/postgres')
+engine = create_engine(POSTGRES_URL)
 Session = scoped_session(sessionmaker(bind=engine))
 Base = declarative_base()
 

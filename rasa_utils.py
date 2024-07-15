@@ -12,8 +12,8 @@ def load_specific_model(model_name):
     Returns:
     - Agent: An agent object that can be used to parse messages.
     """
-    # Construct the model path
-    model_path = os.path.join('..', 'py_rasa_bot', 'models', model_name)
+    # Construct the model path relative to the root directory
+    model_path = os.path.join(os.path.dirname(__file__), 'py_rasa_bot', 'models', model_name)
     logging.info(f"Looking for model at: {model_path}")
     
     # Check if the model file exists

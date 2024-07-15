@@ -1,6 +1,11 @@
 import os
 from rasa.core.agent import Agent
 import logging
+import subprocess
+
+subprocess.run(["pip", "install", "--force-reinstall", "rasa"])
+from rasa.core.agent import Agent
+
 
 def load_specific_model(model_name):
     """

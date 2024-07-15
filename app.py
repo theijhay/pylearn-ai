@@ -6,6 +6,7 @@ from quart_cors import cors
 from dotenv import load_dotenv
 import os
 import sys
+print(sys.path)
 from models import Base, UserProgress, session
 from logging_config import setup_logging
 from rasa_utils import load_specific_model

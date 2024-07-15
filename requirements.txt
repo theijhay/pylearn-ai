@@ -28,7 +28,7 @@ scipy
 simple-websocket
 sklearn-crfsuite
 SQLAlchemy==1.4.25
-psycopg2==2.9.1
+psycopg2-binary==2.9.1
 tensorboard
 tensorboard-data-server
 tensorflow

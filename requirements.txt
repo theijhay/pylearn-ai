@@ -27,8 +27,8 @@ scikit-learn
 scipy
 simple-websocket
 sklearn-crfsuite
-SQLAlchemy==1.4.25
-psycopg2-binary==2.9.1
+SQLAlchemy
+psycopg2-binary
 tensorboard
 tensorboard-data-server
 tensorflow
@@ -36,3 +36,4 @@ tensorflow-estimator
 tensorflow-hub
 tensorflow-io-gcs-filesystem
 tensorflow-text
+python-dotenv

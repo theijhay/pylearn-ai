@@ -37,3 +37,4 @@ tensorflow-hub
 tensorflow-io-gcs-filesystem
 tensorflow-text
 python-dotenv
+rasa

@@ -1,7 +1,6 @@
 from quart import Quart, request, jsonify
 from logging.handlers import RotatingFileHandler
 import logging
-
 from quart_cors import cors
 from dotenv import load_dotenv
 import os
@@ -11,25 +10,7 @@ from logging_config import setup_logging
 from rasa_utils import load_specific_model
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 import asyncio
-import subprocess
-import rasa
-
-# Print Python path
-print("Python path:", sys.path)
-
-# Check installed packages
-installed_packages = subprocess.run(["pip", "freeze"], capture_output=True, text=True).stdout
-print("Installed packages:\n", installed_packages)
-
-# Reinstall Rasa
-subprocess.run(["pip", "install", "--force-reinstall", "rasa"])
-
-# Verify Rasa installation
-try:
-    import rasa
-    print("Rasa path:", os.path.dirname(rasa.__file__))
-except ImportError:
-    print("Rasa is not installed.")
+import importlib.util
 
 # Initialize Quart app
 app = Quart(__name__)

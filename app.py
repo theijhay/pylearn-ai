@@ -12,6 +12,17 @@ from logging_config import setup_logging
 from rasa_utils import load_specific_model
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 import asyncio
+import subprocess
+
+def check_rasa_installation():
+    try:
+        import rasa
+        print("Rasa is installed.")
+    except ImportError:
+        print("Rasa is not installed.")
+        subprocess.run(["pip", "install", "rasa"])
+
+check_rasa_installation()
 
 # Initialize Quart app
 app = Quart(__name__)
@@ -107,6 +118,13 @@ async def handle_user_message(message, sender_id):
     # Run the asynchronous process_message function and return the result
     response_text = await process_message(message, sender_id)
     return response_text
+
+try:
+    from rasa.core.agent import Agent
+except ImportError:
+    import subprocess
+    subprocess.run(["pip", "install", "rasa"])
+    from rasa.core.agent import Agent
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)

@@ -36,6 +36,8 @@ tensorflow-estimator
 tensorflow-hub
 tensorflow-io-gcs-filesystem
 python-dotenv
+pip
 rasa
 rsa
 rasa-sdk
+uvloop

@@ -1,4 +1,4 @@
-FROM python:3.12-slim
+FROM python:3.11-slim
 
 # Install build tools
 RUN apt-get update && \
@@ -12,5 +12,6 @@ RUN pip install -r requirements.txt
 # Copy the rest of your application code
 COPY . /app
 WORKDIR /app
+EXPOSE 80
 
 CMD ["python", "app.py"]

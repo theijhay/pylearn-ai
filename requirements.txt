@@ -40,4 +40,4 @@ pip
 rasa
 rsa
 rasa-sdk
-uvloop
+uvloop --only-binary :all:

@@ -36,4 +36,4 @@ tensorflow-estimator
 tensorflow-hub
 tensorflow-io-gcs-filesystem
 python-dotenv
-rasa
+rasa==3.0.0

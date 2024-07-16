@@ -2,8 +2,12 @@ services:
   - type: web
     name: my-backend
     env: python
+    plan: free
     buildCommand: "./render-build.sh"
+    - pip install -r requirements.txt
+    - pip install rasa
     startCommand: "python3 app.py"
+    startCommand: source /opt/render/project/src/.venv/bin/activate && python app.py
     envVars:
       - key: DATABASE_URL
         value: postgresql://postgres.daojspoqqwlcrwlemrwo:WqfpPLAOWLyYBGtn@aws-0-us-east-1.pooler.supabase.com:6543/postgres

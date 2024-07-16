@@ -1,6 +1,3 @@
-Flask
-Flask-Cors
-Flask-Limiter
 flatbuffers
 fonttools
 frozenlist
@@ -9,8 +6,6 @@ hyperframe
 numpy
 black
 isort
-flake8
-pytest
 pydantic
 pytest-flask
 python-crfsuite
@@ -36,8 +31,8 @@ tensorflow-estimator
 tensorflow-hub
 tensorflow-io-gcs-filesystem
 python-dotenv
-pip
 rasa
 rsa
-rasa-sdk
-uvloop --only-binary :all:
+rasa-sdk==1.4.0
+uvloop --only-binary :all
+pipdeptree

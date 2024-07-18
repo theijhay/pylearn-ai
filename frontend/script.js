@@ -87,7 +87,7 @@ async function sendMessage() {
 
     // Send message to server
     try {
-        const response = await fetch('https://967a-102-89-23-100.ngrok-free.app/webhook', {
+        const response = await fetch('https://f50b-102-89-46-123.ngrok-free.app/webhook', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
